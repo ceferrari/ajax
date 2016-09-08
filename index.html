@@ -4,18 +4,18 @@
 <body>
 <script>
 (function() {
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET", 'http://ident.me/');
-	xhr.onreadystatechange = function() {
-		if (xhr.readyState == XMLHttpRequest.DONE) {
-			if (xhr.status == 200) {
-				document.body.innerHTML = xhr.responseText;
-			} else {
-				document.body.innerHTML = xhr.statusText;
-			}
-		}
-	}
-	xhr.send();
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", 'http://ident.me/');
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+            if (xhr.status == 200) {
+                document.body.innerHTML = xhr.responseText;
+            } else {
+                document.body.innerHTML = xhr.statusText;
+            }
+        }
+    }
+    xhr.send();
 })();
 </script>
 </body>
